@@ -10,7 +10,7 @@ local Keys = {
   ["NENTER"] = 201, ["N4"] = 108, ["N5"] = 60, ["N6"] = 107, ["N+"] = 96, ["N-"] = 97, ["N7"] = 117, ["N8"] = 61, ["N9"] = 118
 }
 
-ESX = nil
+
 INPUT_CONTEXT = 51
 
 local isSentenced = false
@@ -24,14 +24,6 @@ local vassour_net = nil
 
 local spatulamodel = "bkr_prop_coke_spatula_04"
 local spatula_net = nil
-
-Citizen.CreateThread(function()
-	while ESX == nil do
-		TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-		Citizen.Wait(0)
-	end
-end)
-
 
 Citizen.CreateThread(function()
 	Citizen.Wait(2000) --Wait for mysql-async
