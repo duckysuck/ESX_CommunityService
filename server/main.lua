@@ -1,4 +1,4 @@
-
+ESX = exports["es_extended"]:getSharedObject()
 
 TriggerEvent('es:addGroupCommand', 'comserv', 'admin', function(source, args, user)
 	if args[1] and GetPlayerName(args[1]) ~= nil and tonumber(args[2]) then
