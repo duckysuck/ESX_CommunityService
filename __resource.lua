@@ -23,6 +23,6 @@ client_scripts {
 	'client/main.lua'
 }
 
-shared_script '@es_extended/imports.lua'
+shared_scripts '@es_extended/imports.lua'
 
 dependency 'es_extended'
